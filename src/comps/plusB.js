@@ -5,7 +5,7 @@ export default function PlusB() {
     const dispatch = useDispatch();
     
     const handleIncrement = () => {
-        dispatch(increment());
+        dispatch({ type: 'PLUS'});
     }
     return (
         <button onClick={handleIncrement}>+</button>

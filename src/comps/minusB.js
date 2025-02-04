@@ -5,7 +5,7 @@ export default function MinusB() {
     const dispatch = useDispatch();
     
     const handleDecrement = () => {
-        dispatch(decrement());
+        dispatch({ type: 'MINUS'});
     }
     return (
         <button onClick={handleDecrement}>-</button>
